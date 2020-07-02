@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+  <TITLE>Museum</TITLE>
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: maroon; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  #d80e0e;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:  #d80e0e;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: maroon;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color:white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:  #dde1e0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color:  #dde1e0;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: right;
+  }
+}
+
+body {
+   background-image: url("1.jpg");
+   background-attachment: fixed;}
+
+	* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #FFE5B4;
+  padding: 30px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+<body>
+
+<div class="header">
+   <a href="#default" class="logo">PENANG</a><img src="penang.gif" style="width: 10%"><font face="Harlow Solid Italic">Best of Penang Island. Let's Explore!</font>
+  <div class="header-right">
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+</form>
+  </div>
+</div>
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About Penang<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="About Penang.html">Heritage and Culture</a>
+      <a href="History.html">History</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Destination <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="nature.html">Nature</a>
+      <a href="beach.html">Beach</a>
+      <a href="museum.html">Museum</a>
+    </div>
+  </div> 
+   <div class="subnav">
+  <a href="Food.html">Food & Beverages</a>
+  </div> 
+  <div class="subnav">
+  <a href="packages.html">Packages</a>
+  </div>
+  <a href="about us.html">About Us</a>
+  </div>
+
+
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1><font color="white">Top Museum in Penang</h1>
+<hr>
+
+<h2>“The best introduction to art is to stroll through a museum. The more art you see, the more you'll learn to define your own taste.” </h2></font>
+
+<center><IMG SRC="museum.gif"></IMG></center>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="11.jpg" alt="Parents" style="width:100%">
+      <h3>Upside Down Museum</h3>
+      <p>Upside Down Museum is an interactive museum on Kimberley Street in George Town, Penang. It offers a unique experience where only the humans are right side up! The place is well organised during entry so all visitors gets to experience each room and have their photos taken without hordes of other people in the same room. And no worries, there is a staff there on hand who will teach you how to pose with the backdrop and take your photos for you to get the best shots.</p>
+      <p><b>Entrance Fee:</b></p>
+	 		<ul><p><li>Adults: RM27 (MyKad holders RM16)</li>
+		    	<li>Children (aged 5-12): RM16 (MyKid holders RM8)</li>
+				<li>Malaysian Students with Student ID: RM11</li>
+				<li>Non-Malaysian Students with Student ID: RM16</li>
+			</p></ul>
+	  <p><b>Visiting Hours:</b></p>
+				<ul><li>Mondays – Fridays: 8:45am – 6:30pm (last admission at 5:30pm)</li>
+				<li>Saturdays, Sundays & Public Holidays: 8:45am – 7:30pm (last admission at 6:30pm)</li></ul>
+	  <p><b>Location:</b></p>
+	  		Upside Down Penang Museum 45, Lebuh Kimberley, George Town, 10100 George Town, Pulau Pinang, Malaysia
+    </div>
+  </div>
+
+
+<div class="column">
+    <div class="content"> 
+   	  <img src="12.jpg" alt="Nature" style="width:100%">
+      <h3>3D Trick Art Museum</h3>
+      <p>Penang 3D Trick Art Museum located at Lebuh Penang, Georgetown which is known as the UNESCO World Heritage Site. 3D Trick Art refers to a technique that transforms 2-dimensional painting into 3-dimensional images. With the 2D paintings on the walls, floors and ceiling appears to pop upon the surface and come to life. </p>
+      <p>The museum will be housing 40 and above pieces of artworks including optical illusion paintings and sculptures.  Have a very friendly staff that will guide what the pose should be done to make your picture more alive.</p>
+
+      <p><b>Entrance Fee:</b></p>
+      		<ul><p><li>Adults: RM25 (MyKad holders RM15)</li>
+					<li>Children: RM15 (MyKid holders RM10)</li>
+					<li>Malaysian Students with Student ID: RM10</li>
+					<li>Non-Malaysian Students with Student ID: RM15</li>
+					<li>Senior Citizens: RM 15 (MyKad holders RM10)</li>
+			</p></ul>
+			
+      <p><b>Visiting Hours: </b></p>
+      			<ul><li>Mondays – Fridays: (9:00am – 6:00pm)</li>
+					<li>Saturdays, Sundays & Public Holidays: (9.00am – 8:00pm)</li></ul>
+      <p><b>Location:</b></p>
+      	    3D trick Art Penang Museum 10, Lebuh Penang, George Town, 10200, Penang
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+
+ <p><div class="column"></p>
+    <div class="content">
+   <img src="13.jpg" alt="Nature" style="width:100%">
+      <h3>Wonderfood Museum</h3>
+      <p>Wonderfood Museum is a fun place to see and photograph larger-than-life models of Malaysia's national obsession food in all its varied and delicious forms. The museum showcases Malaysia's unique food culture, drawn from the nation's rich multi-racial diversity. The replicas are beautifully made and if you weren't hungry when you entered the museum you will be by the time you leave. The themes include Malaysia's street food and there is a map and recommendations on where in Penang you can find the best places to enjoy dishes such as nasi kandar, banana leaf, char koey teow, wan tan mee and so on. There are also many places for you to take cute and funny photos, and the staffs are willing to help you.</p>
+  	  <p><b>Entrance Fee:</b></p>
+	 		<ul><p><li>Adults: RM25 (MyKad holders RM15)
+				   <li>Children: RM15 (MyKid holders RM10)
+			</p></ul>
+	  <p><b>Visiting Hours:</b></p>
+				<ul><li>Mondays – Sundays & Public Holidays:(9:00am to 6:00 pm)</li></ul>
+	  <p><b>Location:</b></p>
+	  		Wonderfood Penang Museum, 49, Lebuh Pantai, George Town, 10200 George Town, Pulau Pinang, Malaysia
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="content">
+   <img src="14.jpg" alt="Nature" style="width:100%">
+      <h3>Ghost Museum</h3>
+      <p>Ghost Museum is the first Malaysia ghost-themed museum based in Penang. The museum introduces ghosts such as Orang Minyak, Pontianak, Toyol, Pocong, Hantu Pisang, Headless Ghost etc. to the visitors besides featuring the horror and myths of all evils. The scene inside the museum could be disturbing, scary, and contain strobe lights and fogs effect to create a creepy surrounding! Additionally, you can try on some of the costumes available and take fun pictures with the props as well.</p>
+  	  <p><b>Entrance Fee:</b></p>
+  	  		<ul><p><li>Adults: RM36 (MyKad holders RM18)
+				   <li>Children: RM16 (MyKid holders RM8)
+				   <li>Student: RM 16 (MyKad holders RM10)
+                   <li>Senior Citizens: RM 16 (MyKad holders RM 8)
+            </p></ul>
+      <p><b>Visiting Hours:</b></p>
+      		<ul><li>Mondays – Fridays: (10:00am – 7:00pm)</li>
+				<li>Saturdays, Sundays & Public Holidays: (10:00am – 9:00pm)</li></ul>
+	  <p><b>Location:</b></p>
+	  		57, Lebuh Melayu, George Town, 10300 George Town, Pulau Pinang, Malaysia
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="15.jpg" alt="Parents" style="width:100%">
+      <h3>Ben’s Vintage Toy Museum</h3>
+      <p>Ben’s Vintage Toy museum located in Acheh Street. The museum houses a vintage collection ranging from robots and rocket ships to boats, trains, antique aircraft, trucks, wooden horses and more! The collection of toys are simply breathtaking as it will makes you go back in time of your childhood. Definitely it is a worth visit for the young and also the young at heart. You can play with some toys and marvel at others. Just bring your kids so they can see what it was like when you were young.</p>
+
+      <p><b>Entrance Fee:</b></p>
+	 		<ul><p><li>Adults: RM6
+				   <li>Children: RM3</li>
+		  	</p></ul>
+	  <p><b>Visiting Hours:</b></p>
+				<ul><li>Mondays – Sundays: (9.00am – 7.00pm)
+					<p>*Closed on Fridays</p></li></ul>
+	  <p><b>Location:</b></p>
+	  		55, Lebuh Acheh, George Town, 10200 George Town, Pulau Pinang, Malaysia
+    </div>
+  </div>
+
+
+<div class="column">
+    <div class="content"> 
+   	  <img src="16.jpg" alt="Nature" style="width:100%">
+      <h3>Penang War Museum</h3>
+      <p>Penang War Museum in Bukit Batu Maung was a fort built by the British in the 1930s. In 1941 it gained fame when it became the site where the battle for Penang against the invading Japanese army was lost. These days it is a museum open to the public and is billed as Southeast Asia’s largest war museum. If you are really interest in history, you should visit this place and learn about what happened in the other side of WORLD WAR II.</p>
+
+      <p><b>Entrance Fee:</b></p>
+      		<ul><p><li>Adults: RM30 (MyKad holders RM15)</li>
+				   <li>Children 5-12 years old: RM15 (MyKid holders RM7.50)	</li>
+				</p></ul>		
+      <p><b>Visiting Hours: </b></p>
+      			<ul><li>Mondays – Fridays: (9:00am – 6:00pm)</li></ul>
+      <p><b>Location:</b></p>
+      	    Lot 1350, Mukim 12, Daerah Barat Daya, Batu Maung, 11960 Penang
+    </div>
+  </div>
+
+<!-- END MAIN -->
+</div>
+  
+<div class="footer">
+ <p><A HREF="https://www.facebook.com/penangglobal.tourism/"><img src="facebook.png" alt="image" height="11%" width="4.5%"></A> &nbsp; <A HREF="https://twitter.com/TimeOutPenang?s=09"><img src="twitter1.png" alt="image" height="11%" width="4.5%"></A> &nbsp;<A HREF="https://instagram.com/visitpenang?igshid=1lfywswpzxtcr"><img src="instagram.png" alt="image" height="11%" width="4.5%"></A> &nbsp;</A> <A HREF="https://youtu.be/_fEW5gX4U2k"><img src="youtube.png" alt="image" height="11%" width="4.5%"></A></center></p>
+</div>
+
+</body>
+</html>
