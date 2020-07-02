@@ -1,0 +1,400 @@
+
+<!DOCTYPE>
+<html>
+<head>
+	<title>Packages</title>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style> 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 20px;
+  text-align: center;
+  background: black;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: maroon; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:  #d80e0e;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:  #d80e0e;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: maroon;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  color:white;
+}
+
+input[type=text]:focus {
+  width: 100%;
+}
+
+/* Footer */
+.footer {
+  padding: 10px;
+  text-align: center;
+  background:  #dde1e0;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+* {box-sizing: border-box;}
+
+.header {
+  overflow: hidden;
+  background-color:  #dde1e0;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 2px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: right;
+  }
+}	
+</style>
+</head>
+
+<body>
+
+<div class="header">
+   <a href="#default" class="logo">PENANG</a><img src="penang.gif" style="width: 10%"><font face="Harlow Solid Italic">Best of Penang Island. Let's Explore!</font>
+  <div class="header-right">
+    <form>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+</form>
+  </div>
+</div>
+</style>
+</head>
+<body>
+<body background="wallpaper.png">
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About Penang<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="About Penang.html">Heritage and Culture</a>
+      <a href="History.html">History</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Destination <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="nature.html">Nature</a>
+      <a href="beach.html">Beach</a>
+      <a href="museum.html">Museum</a>
+    </div>
+  </div> 
+   <div class="subnav">
+  <a href="Food.html">Food & Beverages</a>
+  </div> 
+  <div class="subnav">
+  <a href="packages.html">Packages</a>
+  </div>
+  <a href="about us.html">About Us</a>
+  </div>
+
+
+
+<br>
+<center><h1><font size="+50" color="black" face="Cooper Black">PACKAGES OF HOTEL</font></h1></center>
+<HR WIDTH=“50%”>
+
+
+<center>
+<img src="stay.jpg" alt="image" height="80%" width="100%"></center>
+<br><font size="+3" color="black" face="Berlin Sans FB"><p class="dashed">HOTEL, PENANG </font> </p>
+
+<p>
+<font size="+2" color="maroon" face="arial"> <h2 align="left"> We serve you the top hotel until the lowest price hotel! </h2>
+
+<HR WIDTH=“50%”>
+<br>
+<img align="left" src="eastern hotel.jpg" alt="image" height="63%" width="40%">
+ </left><h2><font size="+2">Eastern & Oriental Hotel, Penang</h2>
+5-star hotel<br>
+RM 610 - 3 days 2 night<br>
+10, Lebuh Farquhar, George Town, 10200 George Town, Pulau Pinang<br>
+<br>
+Located in the UNESCO World Heritage Site of Georgetown, Eastern & Oriental Hotel offer 19th century heritage accommodations in Penang. It features an outdoor swimming pool and guests can enjoy meals at the in-house restaurant. Offering a 24-hour butler service, free WiFi is available throughout the property.<br>
+<br>
+For more details, click <A HREF="https://www.booking.com/hotel/my/eastern-oriental.en.html?aid=311984;label=eastern-oriental-tSDFv0cPS9Vz4kEKHmlxDgS275029374645:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-303785568:lp1010254:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Ydj4ck6nIj5YLGqhyz5Ttx8;ws=&gclid=Cj0KCQjwudb3BRC9ARIsAEa-vUtk8ws_uYsmJZdwi2gmbDwnNqSjTgcRTlg5U8Ck_CVkE9nMng-tFD4aArtpEALw_wcB">Eastern & Oriental Hotel</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="right" src="prestige.jpg" alt="image" height="63%" width="40%">
+ </right><h2><font size="+2">The Prestige Hotel Penang</h2>
+4-star hotel<br>
+RM 298 - 2 days 1 night<br>
+8, Gat Lebuh Gereja, George Town, 10300 George Town, Pulau Pinang<br>
+<br>
+The Prestige Hotel is a luxury homegrown hospitality label located in the heart of the Georgetown UNESCO world heritage site. Inspired by its colonial Victorian heritage, it welcomes the urbane traveller to a magical contemporized colonial scene, with 162 rooms, an all-day dining outlet, an arcade with a mix of retail outlets, event spaces and a rooftop infinity pool.<br>
+<br>
+For more details, click <A HREF="https://theprestige.my/">The Prestige Hotel</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="left" src="berjaya.jpg" alt="image" height="63%" width="40%">
+ </left><h2><font size="+2">Berjaya Penang Hotel</h2>
+3-star hotel<br>
+RM 162 - 2 days 1 night<br>
+1-Stop Midlands Park, Jalan Burma, 10350 George Town, Pulau Pinang<br>
+<br>
+Berjaya Penang Hotel (formerly known as Georgetown City Hotel) is centrally located in Georgetown, the capital city of the Malaysian state of Penang. Our 4-star hotel in Penang is about 30 minutes away from the Penang International Airport and 5 minutes from the seafront promenade, Gurney Drive. <br>
+<br>
+For more details, click <A HREF="https://www.berjayahotel.com/penang">Berjaya Penang Hotel</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="right" src="cititel.jpg" alt="image" height="63%" width="40%">
+ </right><h2><font size="+2">Cititel Hotel Penang</h2>
+4-star hotel<br>
+RM 141 - 2 days 1 night<br>
+66, Jalan Penang, George Town, 10000 George Town, Pulau Pinang<br>
+<br>
+In a 16-storey downtown building with views of the Malacca Strait, this refined hotel is an 11-minute walk from the shops and offices at the Komtar Tower, and 2 km from the 18th-century Fort Cornwallis. Conservative rooms include complimentary Wi-Fi and flat-screen TVs, as well as rainfall showers, minibars, and tea and coffeemakers. Some have strait views; upgraded rooms feature modern furnishings.<br>
+<br>
+For more details, click <A HREF="https://www.cititelpenang.com/">The Cititel Hotel</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="left" src="hotelneo.jpg" alt="image" height="68%" width="40%">
+ </left><h2><font size="+2">Hotel Neo+ Penang</h2>
+3-star hotel<br>
+RM 107 - 2 days 1 night<br>
+68, Jalan Gurdwara, George Town, 10300 George Town, Pulau Pinang<br>
+<br>
+This modern hotel with views of the Malacca Strait is a 4-minute stroll from a bus stop, an 8-minute walk from the Komtar Tower skyscraper and 2 km from the landmark Fort Cornwallis. Providing views of the city or the Malacca Strait, the contemporary rooms feature free Wi-Fi, flat-screen TVs and safes, plus tea and coffeemaking facilities, and minifridges.<br>
+<br>
+For more details, click <A HREF="https://www.neohotels.com/en/hotel/view/57/hotel-neo--penang---malaysia">The Hotel Neo+ Penang</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="right" src="travelodge.jpg" alt="image" height="80%" width="30%">
+ </right><h2><font size="+2">Travelodge Hotel Georgetown</h2>
+3-star hotel<br>
+RM 96 - per night<br>
+101, Jalan Macalister, 10400 George Town, Pulau Pinang<br>
+<br>
+On a bustling street in the city centre, this contemporary hotel lies a 12-minute walk from the Komtar complex, 3 km from the food stalls of Gurney Drive and 4 km from Fort Cornwallis. Featuring wood floors and colourful accents, the trendy rooms offer free Wi-Fi, flat-screen TVs and pillow-top mattresses, plus desks, minifridges, and tea and coffeemaking facilities; upgraded rooms add sofas.<br>
+<br>
+For more details, click <A HREF="https://www.travelodgehotels.asia/hotel/travelodge-georgetown/?utm_source=local&utm_medium=organic&utm_campaign=gmb">The Travelodge Hotel</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="left" src="old penang.jpg" alt="image" height="70%" width="38%">
+ </left><h2><font size="+2">Old Penang Guesthouse</h2>
+2-star hotel<br>
+RM 43 - per night<br>
+53, Lorong Love, George Town, 10200 George Town, Pulau Pinang<br>
+<br>
+Set in an early 20th-century building with an old-world vibe, this modest hostel is a 13-minute walk from the late 18th-century Fort Cornwallis, a 6-minute walk from Kapitan Keling Mosque and 2 km from the ferry terminal to the mainland. The basic single-sex and mixed dorms sleep from 2 to 12 guests, and come with free Wi-Fi and lockers; bathrooms are shared. Private rooms add antique furnishings and original local artwork; some have en suite facilities.<br>
+<br>
+For more details, click <A HREF="https://www.oldpenang.com/">Old Penang Guesthouse</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+<br>
+<img align="right" src="redinn.jpg" alt="image" height="70%" width="40%">
+ </right><h2><font size="+2">Red Inn Court</h2>
+2-star hotel<br>
+RM 38 - per night<br>
+35C, 35, Jalan Masjid Kapitan Keling, George Town, 10200 George Town, Pulau Pinang<br>
+<br>
+Nestled in a lively, historic village, this informal hostel in a French Colonial–style building is a 5-minute walk from the Khoo Kongsi Chinese temple, a 10-minute walk from the Jubilee Clock Tower and an 11-minute walk from the Clan Jetties of Penang. Casual dorms offer free Wi-Fi, lockers, and cozy bunk beds with reading lamps, plus shared bathrooms with heat-recycling showers. Some have TVs. Relaxed private rooms feature platform beds, and some have en suite facilities.<br>
+<br>
+For more details, click <A HREF="http://www.redinncourt.com/">The Red Inn Court</A>
+<br>
+<br>
+<br>
+<br>
+<HR WIDTH=“50%”>
+
+<p><left>For hotel booked, you can directly WhatsApp  by click the icon apps :)</p></left>
+
+<left> <A HREF="https://www.wasap.my/01112337473/"><img src="ws.png" alt="image" height="10%" width="5%"></A> - Najihah <br>
+  <br>
+<A HREF="https://www.wasap.my/0136201412/"><img src="ws.png" alt="image" height="10%" width="5%"></A> - Danish
+</left>
+
+<br>
+<br>
+<br>
+<br>
+<Br>
+
+<div class="footer">
+ <p><A HREF="https://www.facebook.com/penangglobal.tourism/"><img src="facebook.png" alt="image" height="11%" width="4.5%"></A> &nbsp; <A HREF="https://twitter.com/TimeOutPenang?s=09"><img src="twitter1.png" alt="image" height="11%" width="4.5%"></A> &nbsp;<A HREF="https://instagram.com/visitpenang?igshid=1lfywswpzxtcr"><img src="instagram.png" alt="image" height="11%" width="4.5%"></A> &nbsp;</A> <A HREF="https://youtu.be/_fEW5gX4U2k"><img src="youtube.png" alt="image" height="11%" width="4.5%"></A></center></p>
+<audio>
+  <div style="visibility:hidden">
+    <audio autoplay loop>
+    <source src="lagupenang.mp3">
+</audio>
+</div>
+
+</body>
+</HTML>
